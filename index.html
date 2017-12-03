@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>On The Beach</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex-container flex-buttons">
+            <button type="button" class="btnSort" id="sortAlpha">sort <strong>alphabetically</strong></button>
+            <button type="button" class="btnSort btnSortActive" id="sortPrice">sort by <strong>price</strong></button>
+            <button type="button" class="btnSort" id="sortStars">sort by <strong>star rating</strong></button>
+        </div>
+    </header>
+    <main>
+        <div id="holidays" class="flex-container flex-column">
+            <input type="text" id="filter" placeholder="Search for departure date or departure airport...">
+            <div class="holiday">
+                <div class="holidayHead flex-container">
+                    <div class="resortName">
+                        <strong class="resortTitle">Aguamarina Golf Hotel and Apartments</strong>
+                        <div class="starRating" data-stars="4">
+                                <img width="15" height="15" src="img/star.png" alt="4 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="4 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="4 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="4 stars"/>
+                        </div>
+                        <span class="location">Costa Adeje, Tenerife</span>
+                    </div>
+                    <div class="price">
+                        <div class="location">holiday price</div>
+                        <strong class="priceValue">£499.99</strong>
+                    </div>
+                </div>
+                <div class="resortImage" id="aguamarinaHotel"></div>
+                <div class="summary flex-container">
+                    <div class="tripSummary">
+                        <strong>3 July 2014</strong> for <strong>7 days</strong> from <strong>Manchester</strong>, <strong>2</strong> adults, <strong>2</strong> children
+                    </div>
+                    <div class="arrow">
+                        &gt;
+                    </div>
+                </div>
+                <div class="description">                    
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam risus justo, porta ut felis a, imperdiet iaculis massa.
+                        Curabitur non tristique ligula. Nulla tristique mauris vel euismod convallis.
+                        Aenean feugiat libero vel mattis efficitur. Aliquam lacinia aliquam odio. Donec
+                        finibus tincidunt feugiat. Sed convallis neque dui, nec sagittis erat gravida et.
+                        <a href="#" class="btnBook">book now</a>
+                </div>                
+            </div>
+            <div class="holiday">
+                <div class="holidayHead flex-container">
+                    <div class="resortName">
+                        <strong class="resortTitle">Laguna Park II</strong>
+                        <div class="starRating" data-stars="3">
+                                <img width="15" height="15" src="img/star.png" alt="3 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="3 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="3 stars"/>
+                        </div>
+                        <span class="location">Costa Adeje, Tenerife</span>
+                    </div>
+                    <div class="price">
+                        <div class="location">holiday price</div>
+                        <strong class="priceValue">£696.80</strong>
+                    </div>
+                </div>
+                <div class="resortImage" id="lagunaHotel"></div>
+                <div class="summary flex-container">
+                    <div class="tripSummary">
+                        <strong>27 May 2014</strong> for <strong>7 days</strong> from <strong>Liverpool</strong>, <strong>2</strong> adults, <strong>1</strong> child
+                    </div>
+                    <div class="arrow">
+                        &gt;
+                    </div>
+                </div>
+                <div class="description">                    
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam risus justo, porta ut felis a, imperdiet iaculis massa.
+                        Curabitur non tristique ligula. Nulla tristique mauris vel euismod convallis.
+                        Aenean feugiat libero vel mattis efficitur. Aliquam lacinia aliquam odio. Donec
+                        finibus tincidunt feugiat. Sed convallis neque dui, nec sagittis erat gravida et.
+                        <a href="#" class="btnBook">book now</a>
+                </div>
+            </div>
+            <div class="holiday">
+                <div class="holidayHead flex-container">
+                    <div class="resortName">
+                        <strong class="resortTitle">Costa Adeje Gran Hotel</strong>
+                        <div class="starRating" data-stars="5">
+                                <img width="15" height="15" src="img/star.png" alt="5 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="5 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="5 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="5 stars"/>
+                                <img width="15" height="15" src="img/star.png" alt="5 stars"/>
+                        </div>
+                        <span class="location">Costa Adeje, Tenerife</span>
+                    </div>
+                    <div class="price">
+                        <div class="location">holiday price</div>
+                        <strong class="priceValue">£1,136.50</strong>
+                    </div>
+                </div>
+                <div class="resortImage" id="costaHotel"></div>
+                <div class="summary flex-container">
+                    <div class="tripSummary">
+                        <strong>3 July 2014</strong> for <strong>7 days</strong> from <strong>East Midlands</strong>, <strong>2</strong> adults, <strong>2</strong> children & <strong>1</strong> infant
+                    </div>
+                    <div class="arrow">
+                        &gt;
+                    </div>
+                </div>
+                <div class="description">                    
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam risus justo, porta ut felis a, imperdiet iaculis massa.
+                        Curabitur non tristique ligula. Nulla tristique mauris vel euismod convallis.
+                        Aenean feugiat libero vel mattis efficitur. Aliquam lacinia aliquam odio. Donec
+                        finibus tincidunt feugiat. Sed convallis neque dui, nec sagittis erat gravida et.
+                        <a href="#" class="btnBook">book now</a>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

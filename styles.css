@@ -1,0 +1,213 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html { 
+    background-image: url(img/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header, main {
+    padding: 1em;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/*Header styles*/
+.flex-buttons {
+    flex-direction: column;
+}
+
+.btnSort {
+    background-color: #B2EBF7;
+    color: #00AEE1;
+    padding: 1.5em;
+    margin: .5em 0;
+    text-align: center;
+    border: none;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btnSort:hover {
+    cursor: pointer;
+}
+
+.btnSortActive {
+    background-color: #00AEE1;
+    color: #fff;
+}
+
+/*Main styles*/
+#filter {
+    flex-grow: 1;
+    padding: .5em;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.holiday {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    margin-bottom: 1em;
+}
+
+.holiday:last-of-type {
+    margin-bottom: 0;
+}
+
+.holidayHead {
+    width: 100%;
+}
+
+.resortName {
+    flex-grow: 1;
+    background-color: #D3E1F0;
+    padding: .5em;
+    color: #27428D;
+}
+
+.location {
+    font-size: .75em;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F2D430;
+    padding: .5em;
+    color: #27428D;
+    text-align: right;
+}
+
+.resortImage {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#costaHotel {
+    background-image: url(img/image_01.png);
+}
+
+#aguamarinaHotel {
+    background-image: url(img/image_02.png);
+}
+
+#lagunaHotel {
+    background-image: url(img/image_03.png);
+}
+
+.summary {
+    padding: .5em;
+    background-color: #00aee1;
+}
+
+.summary:hover {
+    cursor: pointer;
+}
+
+.tripSummary {
+    flex-grow: 1;
+    color: #fff;
+}
+
+.arrow {
+    color: #fff;
+    font-size: 2em;
+}
+
+.arrowActive {
+    transform: rotate(90deg);
+}
+
+.description {
+    height: 0;
+    overflow: hidden;
+    font-size: .75em;
+    background-color: #fff;
+    color: #00aee1;
+}
+
+.showDesc {
+    height: auto;
+    padding: .5em;
+    animation: height .5s;
+}
+
+.btnBook {
+    display: block;
+    text-decoration: none;
+    background-color: #19388A;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 0.66em 1em;
+    width: 5.7em;
+    margin: 0px auto;
+    margin-top: 10px;
+    font-size: 1.25em;
+}
+
+/*Media Queries*/
+
+@media(min-width: 768px) {
+    .flex-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .starRating {
+        display: inline-block;
+    }
+
+    .location {
+        display: block;
+        padding-top: .3em;
+    }
+
+    .btnSort {
+        width: 15em;
+        font-size: 1em;
+    }
+
+    .tripSummary {
+        padding-top: .5em;
+    }
+
+    header, main {
+        width: 736px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btnSort {
+        width: 14em;
+    }
+}
